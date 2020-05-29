@@ -1,15 +1,13 @@
 import React from 'react';
-import Style from '../../Main/Main.module.scss'
-import Image from '../../../images/slide1.jpg'
+import Style from '../../Main/Main.module.scss';
+import Image from '../../../images/slide1.jpg';
+import Slider from '../../../Slider';
 
 export default function Home(props) {
     return (
         <div>
             <div>
-                <div>
-                    <img src={Image} alt="bread" />
-                    <h2 className={Style.lobsterfont}>Vi elsker at lave brød</h2>
-                </div>
+                <Slider />
             </div>
             <section>
                 <h3 className={Style.lobsterfont}>Vi skaber lækkert! brød</h3>
