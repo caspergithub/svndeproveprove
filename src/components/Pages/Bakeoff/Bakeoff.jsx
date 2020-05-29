@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Styles from './Bakeoff.module.scss';
+import Image from '../../../images/slide1-kopi.jpg';
+
 
 export default function Bakeoff(props) {
 
@@ -25,6 +27,7 @@ export default function Bakeoff(props) {
 
     return (
         <div>
+            <img src={Image} alt="bread" />
             <h2>Bakeoff</h2>
             <div>
                 <p>This is the React Bakeoff page.</p>
@@ -34,8 +37,8 @@ export default function Bakeoff(props) {
                     {
                         apiData && apiData.length > 0 && apiData.map((products, i) =>
                             <div key={products.title}>
-                                <h3>{products.title}</h3>
                                 <img src={products.image.fullpath} alt="imgnames" />
+                                <h3>{products.title}</h3>
                                 <p>{products.teaser}</p>
                             </div>
                         )

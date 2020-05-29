@@ -8,6 +8,10 @@ export default function Home(props) {
         <div>
             <div>
                 <Slider />
+                <div>
+                    <img src={Image} alt="bread" />
+                    <h2 className={Style.lobsterfont}>Vi elsker at lave brød</h2>
+                </div>
             </div>
             <section>
                 <h3 className={Style.lobsterfont}>Vi skaber lækkert! brød</h3>
